@@ -1,0 +1,59 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+		meta(name='viewport', content='width=device-width,initial-scale=1')
+		title WAD Project
+		meta(name='author', content='Matheus Sturm, Ira Kriskovic, Eddy Flynn')
+		link(href='https://fonts.googleapis.com/css?family=Pontano Sans', rel='stylesheet')
+		link(rel='stylesheet', href='app.css', type='text/css')
+	body
+		header
+			// top image
+			#banner
+				img(src='/gallery/apartment1.jpg', alt='apartment', title='apartment')
+			h1#logo
+				a(href='index') Logo
+			// logo
+			// navigation
+			nav#mainNav
+				ul.menu
+					li
+						a(href='/') Home
+					li
+						a(href='contact') Contact
+					li
+						a(href='#') About
+					li
+						a(href='#') Academic Section
+			#topbackground
+		.clearfix
+		
+	block content
+	
+	footer
+		div
+			p
+				| National College of Ireland
+				br
+				|           HDip in Science in Web Technologies
+				br
+				|           Web Application Development - Project 2018
+		div
+			p
+				| Matheus Sturm
+				br
+				|           Ira Kriskovic
+				br
+				|           Eddy Flynn
+		div#bottommenu
+			ul.menu
+				li
+					a(href='/') Home
+				li
+					a(href='contact') Contact
+				li
+					a(href='#') About
+				li
+					a(href='#') Academic Section
