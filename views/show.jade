@@ -1,0 +1,18 @@
+extends layout
+block content
+	main
+		#mainShow
+				each apartment in individual
+						h2 #{apartment.name}
+						h3 #{apartment.city}
+						h4 #{apartment.address}
+						p Monthly Price: €#{apartment.price}
+						p #{apartment.description}
+						img(src='/gallery/#{apartment.image}', alt='apartment')
+						
+
+
+				
+							
+							
+							

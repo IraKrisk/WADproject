@@ -12,6 +12,9 @@ ul {
 a {
 	text-decoration: none;
 }
+img {
+	  background-size: contain;
+}
 /* clears floats */
 .clearfix {
   clear: both;
@@ -60,15 +63,16 @@ ul.menu li {
 }
 #banner img {
   width: 100%;
-  background-size: contain;
   height: auto;
 }
 
 main {
   max-width: 1200px;
+	width: 100%;
   box-sizing: border-box;
   padding: 0 50px;
   margin: 70px auto;
+	overflow: auto;
 }
 footer {
   max-width: 1400px;
@@ -99,3 +103,66 @@ footer div {
 footer a {
 	color: #0b537c;
 }
+
+/* index page */
+
+#mainIndex {
+	margin-top: -40px;
+}
+#indexText {
+	display: block;
+	padding-top: 270px;
+}
+#indexText p {
+	margin-top: 15px;
+}
+.button {
+  width: 50%;
+  box-sizing: border-box;
+  border: none;
+	display: block;
+	color: #fff;
+  background-color: #0b537c;
+  border-radius: 3px;
+  padding: 10px 20px;
+  margin: 20px auto;
+  font-size: .9em;
+}
+a.button:hover {
+	font-weight: bold;
+}
+.individualAp {
+	width: 33%;
+	float: left;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 30px 30px;
+}
+.individualAp img {
+	max-width: 100%;
+	outline: 1px solid #0b537c;
+	outline-offset: 3px;
+}
+
+/* show page */
+
+#mainShow {
+	overflow: hidden;
+}
+#mainShow img {
+	width: 100%;
+	margin-top: 50px;
+}
+#mainShow p {
+	margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
