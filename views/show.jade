@@ -1,0 +1,24 @@
+extends layout
+block content
+	main
+		#mainShow
+				each apartment in individual
+						h2 #{apartment.name}
+						h3 #{apartment.city}
+						h4 #{apartment.address}
+						p Monthly Price: €#{apartment.price}
+						p Id: #{apartment.id}
+						p #{apartment.description}
+						img(src='/gallery/#{apartment.image}', alt='apartment')
+						a.button(href='/editapartment/#{apartment.name}')  Edit #{apartment.name}
+						a.button(href='/deleteapartment/#{apartment.name}') Delete #{apartment.name}
+
+ 
+
+						
+
+
+				
+							
+							
+							
