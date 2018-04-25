@@ -167,10 +167,20 @@ app.get('/deleteapartment/:name', function(req, res){
 
 // HTTP GET request for contact page
 app.get('/contact', function(req, res) {
-  res.render("contact");
+  res.render("contact");    
 });
 
 
+
+// HTTP POST request for contact page
+app.post('/contact', function(req, res){
+    if((req.body.contname === "") || ((/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/).test(req.body.contemail) === false) || (req.body.contmessage === "") || (req.body.contcaptcha != 17)){
+        res.render("error");
+    }
+    else {
+        res.render("thankyou");
+    }
+});
 
 
 // server set up

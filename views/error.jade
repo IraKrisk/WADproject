@@ -1,11 +1,14 @@
 extends layout
 block content
 		main
-			h2 Get in touch
-			p All fields are required
+			h2 Error
+			p
+				i * Please fill in all fields
+			p
+				i * Please enter a valid email address
+			br
 			br
 			#contactForm.form
-				button#proceed Proceed
 				form#contactForm(method='post', name='contactForm', novalidate='')
 					.input-field
 						label#namelabel(for='contname')
@@ -14,7 +17,7 @@ block content
 						label#emaillabel(for='contemail')
 						input#contemail(type='contemail', name='contemail', placeholder='your.email@email')
 					.clearfix
-					#hidden-formfields
+					#hidden-formfields.not-hidden
 						#empty-field
 						.input-message
 							label#messagelabel(for='contmessage')
@@ -28,4 +31,3 @@ block content
 				i Hover over map to enlarge
 			#map
 				iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38107.02628922871!2d-6.278198223252529!3d53.34882058222782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e8cd86e97e7%3A0x6d51b774ee7fa935!2sNational+College+of+Ireland!5e0!3m2!1sen!2sie!4v1524087435589', allowfullscreen='')
-

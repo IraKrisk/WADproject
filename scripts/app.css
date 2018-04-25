@@ -46,6 +46,10 @@ header {
   top: 25px;
   z-index: 1;
 }
+#logo a {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.15em;
+}
 header a {
   color: #0b537c;
 }
@@ -75,7 +79,6 @@ main {
   box-sizing: border-box;
   padding: 0 50px;
   margin: 70px auto;
-	overflow: auto;
 }
 footer {
   max-width: 1400px;
@@ -106,6 +109,7 @@ footer div {
 footer a {
 	color: #0b537c;
 }
+
 
 /* index page */
 
@@ -189,7 +193,7 @@ input, textarea, button#proceed {
 textarea {
   height: 100px;
 }
-.input-message, #input-captcha, input[type=submit], button#proceed {
+.input-message, #input-captcha, input[type=submit], .button#proceed {
   margin-top: 30px;
 }
 #input-captcha, input[type=submit] {
@@ -200,11 +204,28 @@ textarea {
   line-height: 0;
   color: #fff;
 }
-#submit {
-   margin-top: 40px;
+
+button#proceed {
+  box-sizing: border-box;
+  position: absolute;
+  margin-top: 80px;
+  width: 48%;
+}
+button#submit{
+  padding: 20px 30px;
+  margin-top: 35px;
+  margin-left: 0;
+  width: 48%;
 }
 #submit:hover, #proceed:hover {
   font-weight: bold;
+}
+#hidden-formfields {
+  display: none;
+}
+#hidden-formfields.not-hidden {
+  display: block;
+  margin-top: -63px;
 }
 #form p {
   display: inline-block;
@@ -226,15 +247,6 @@ input:focus, textarea:focus, input:hover, textarea:hover, button:hover, button:f
    color: #fff;
    font-family: 'Pontano Sans', sans-serif;  
 }
-#hidden-fields {
-  display: none;
-}
-button#proceed {
-  box-sizing: border-box;
-  position: absolute;
-  margin-top: 80px;
-  width: 48%;
-}
 #empty-field {
   height: 70px;
 }
@@ -245,6 +257,24 @@ button#proceed {
 }
 .form.addedit button {
 	margin-top: 50px;
+}
+
+
+/* map */
+
+#map {
+  width: 100%;
+  margin: 0 auto;  
+}
+iframe {
+  width: 100%; 
+  margin: 30px 0;
+  min-height: 250px;
+  height: 100%;
+}
+p#mapText {
+  margin-top: 130px;
+  display: block;
 }
 
 
@@ -261,6 +291,22 @@ button#proceed {
 	margin-top: 30px;
 }
 
+/* thank you page */
+.button.IME {
+  width: 70%;
+  
+  display: block;
+  padding: 7px 50px;
+}
+.button.IME::first-letter {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.hide img {
+  width: 70%;
+  margin: 15px auto 20px auto;
+}
 
 
 
