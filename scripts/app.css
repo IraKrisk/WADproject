@@ -68,10 +68,27 @@ ul.menu li {
   float: left;
   padding-left: 25px;
 }
-#banner img {
+
+/* start Banner */ 
+#imx {
   width: 100%;
   height: auto;
 }
+#slideBanner {
+/* Adjust buttons for change image */ 
+  width: 30px;
+  height: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 5px;
+  background: #0b537c;
+  border-radius: 3px;
+  border: none;
+ }
+#slideBanner:hover {
+  opacity: 0.9;
+}
+/* end banner */ 
 
 main {
   max-width: 1200px;

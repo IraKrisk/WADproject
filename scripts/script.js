@@ -1,6 +1,6 @@
 $(document).ready(function(){
  
-// front page images fade out and in on hover
+// images fade out and in on hover
   $(".apImage").hover(function(){
     $(this).fadeTo(1000, 0.7);
   }, function(){
@@ -30,15 +30,71 @@ $(document).ready(function(){
     $("#Eddy").click(function(){
       $("#EddyInfo").slideToggle(1000);
   });
+  
+}); 
 
 
 
-  
-  
-  
-  
-  
-});
+
+// slide show
+// images taken from https://pixabay.com/
+
+function changeImage() {
+document.getElementById("imx").setAttribute("src", "/gallery/apartment1.jpg");
+}
+function changeImage2() {
+document.getElementById("imx").setAttribute("src", "/gallery/apartment2.jpg");
+}
+function changeImage3() {
+document.getElementById("imx").setAttribute("src", "/gallery/apartment3.jpg");
+}
+function changeImage4() {
+document.getElementById("imx").setAttribute("src", "/gallery/apartment4.jpg");
+}
+function changeImage5() {
+document.getElementById("imx").setAttribute("src", "/gallery/apartment5.jpg");
+}
+function changeImage6() {
+document.getElementById("imx").setAttribute("src", "/gallery/apartment6.jpg");
+}
+
+//SOURCE https://jsfiddle.net/bradtraversy/74owmd01/
+var i = 0; 			// Start Point
+var img = [];	// Images Array
+var time = 100;	// Time Between Switch
+	 
+// Image List
+img[0] = "/gallery/apartment1.jpg";
+img[1] = "/gallery/apartment2.jpg";
+img[2] = "/gallery/apartment3.jpg";
+img[3] = "/gallery/apartment4.jpg";
+img[4] = "/gallery/apartment5.jpg";
+img[5] = "/gallery/apartment6.jpg";
+
+// Change Image
+function changeImg(){
+	document.slide.src = img[i];
+
+	// Check If Index Is Under Max
+	if(i < img.length - 1){
+	  // Add 1 to Index
+	  i++; 
+	} else { 
+		// Reset Back To O
+		i = 0;
+	}
+
+	// Run function every x seconds
+	setTimeout(changeImg(), 100);
+}
+
+// Run function when page loads
+window.onload=changeImg;
+
+
+
+
+
 
 
 // contact form validation

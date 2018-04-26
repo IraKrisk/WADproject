@@ -12,9 +12,15 @@ html(lang='en')
 		script(src='script.js')
 	body
 		header
-			// top image
-			#banner
-				img(src='/gallery/apartment1.jpg', alt='apartment', title='apartment')
+			// slide show
+			#Banner
+				img#imx(src='/gallery/apartment1.jpg')
+				button#slideBanner(onclick='changeImage()') 
+				button#slideBanner(onclick='changeImage2()') 
+				button#slideBanner(onclick='changeImage3()') 
+				button#slideBanner(onclick='changeImage4()') 
+				button#slideBanner(onclick='changeImage5()') 
+				button#slideBanner(onclick='changeImage6()') 
 			h1#logo
 				a(href='/') IME Apartments
 			// logo
