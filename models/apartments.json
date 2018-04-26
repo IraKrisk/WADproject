@@ -52,6 +52,32 @@
         "description": "On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their projects again and again.",
         "image": "apartment6.jpg",
         "id": 6
+    },
+    {
+        "name": "Apartment 7",
+        "city": "Kelkenny",
+        "address": "59 Pink Street",
+        "price": "1500",
+        "description": "She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.",
+        "image": "apartment4.jpg",
+        "id": "7"
+    },
+    {
+        "name": "Apartment 8",
+        "city": "Galway",
+        "address": "32 Brown Street",
+        "price": "2100",
+        "description": "But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their projects again and again. And if she hasn’t been rewritten, then they are still using her.",
+        "image": "apartment1.jpg",
+        "id": 8
+    },
+    {
+        "name": "Apartment 9",
+        "city": "Cork",
+        "address": "97 Gray Street",
+        "price": "1300",
+        "description": "The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. ",
+        "image": "apartment5.jpg",
+        "id": 9
     }
-
 ]

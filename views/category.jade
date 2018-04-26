@@ -1,0 +1,22 @@
+extends layout
+block content
+	main
+		#mainShow
+			each apartment in cat
+				.indexImg
+					.individualAp
+						h2 #{apartment.name}
+						h3 #{apartment.city}
+						a(href='/show/#{apartment.name}')
+							img.apImage(src='../#{apartment.image}', alt='apartment')
+						a.button(href='/show/#{apartment.name}')  Details
+
+ 
+
+						
+
+
+				
+							
+							
+							

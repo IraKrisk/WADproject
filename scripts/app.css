@@ -130,6 +130,46 @@ footer a {
 
 /* index page */
 
+#citySearch  {
+  width: 50%;
+  margin: 90px auto 0 auto;
+}
+ul.dropdownNav {
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  width: 25%;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  margin: -28px auto 0 auto;
+}
+#citySearch li a {
+  box-sizing: border-box;
+  border: none;
+	display: block;
+	color: #fff;
+  background-color: #0b537c;
+  border-radius: 3px;
+  padding: 10px 5px;
+  margin: 20px auto;
+  font-size: 1em;
+}
+.dropdownNav a {
+  margin: 0;
+}
+.dropdownNav li {
+  padding: 0;
+  text-align: center;
+  font-size: 1em;
+}
+#citySearch .button {
+  padding: 0;
+  text-align: center;
+  font-size: 1em;
+}
+
+
 #mainIndex {
 	margin-top: -40px;
 }
@@ -158,6 +198,7 @@ a.button {
 a.button:hover {
 	font-weight: bold;
 }
+
 .newbutton {
 	display: inline-block;
 	box-sizing: border-box;

@@ -20,7 +20,7 @@ $(document).ready(function(){
       $(this).animate({height:"250px"}, 2000);
   });
   
-// Students contact info 
+// students' contact info 
     $("#Ira").click(function(){
       $("#IraInfo").slideToggle(1000);
   });
@@ -31,7 +31,13 @@ $(document).ready(function(){
       $("#EddyInfo").slideToggle(1000);
   });
   
+// dropdown
+  $(".dropdown").hover(function(){
+    $(".dropdownNav").slideToggle();
+  });
+  
 }); 
+
 
 
 

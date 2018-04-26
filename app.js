@@ -164,6 +164,20 @@ app.get('/deleteapartment/:name', function(req, res){
 });
 
 
+// search by city
+
+app.get('/category/:city', function(req, res){ 
+    function categ(oneCat){
+    return oneCat.city === req.params.city;  // find city
+    }
+    
+    var cat = apartments.filter(categ);  // filter city
+    res.render("category",
+                {cat:cat}
+              );  
+});
+
+
 
 // HTTP GET request for contact page
 app.get('/contact', function(req, res) {

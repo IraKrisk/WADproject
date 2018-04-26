@@ -2,6 +2,19 @@ extends layout
 block content
 	main
 		#mainIndex
+			ul#citySearch
+				li.dropdown.button
+					a(href='#') Choose City
+					ul.dropdownNav.button
+						li
+							a(href='/category/Dublin') Dublin
+						li
+							a(href='/category/Cork') Cork
+						li
+							a(href='/category/Dublin') Kilkenny
+						li
+							a(href='/category/Cork') Galway
+        
 			each apartment in apartments
 				.indexImg
 					.individualAp
