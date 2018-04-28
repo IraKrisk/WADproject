@@ -46,20 +46,19 @@ app.get('/addapartment', function(req, res){
 
 app.post('/addapartment', function(req, res){
 
-    // unique id
+      // unique id
   
-	function maxId(apartment, id) {
-		var max
-		for (var i=0; i<apartments.length; i++) {
-			if(!max || parseInt(apartments[i][id]) > parseInt(max[id]))
-				max = apartments[i];		
-		}
-		return max;
-	}
+    function maxId(apartment, id) {
+        var max
+        for (var i=0; i<apartments.length; i++) {
+          if(!max || parseInt(apartments[i][id]) > parseInt(max[id]))
+            max = apartments[i];		
+        }
+        return max;
+    }
 	
-	var largestId = maxId(apartments, "id");
-	newId = parseInt(largestId.id) + 1;
-	console.log(newId);
+    var largestId = maxId(apartments, "id");
+    newId = parseInt(largestId.id) + 1;
 	
       
       // a new apartment, input field values
@@ -71,25 +70,32 @@ app.post('/addapartment', function(req, res){
             description : req.body.description,
             image : req.body.image,
             id : newId
-          };
-      
-      var json = JSON.stringify(apartments);
-      fs.readFile('./models/apartments.json', 'utf8', function readFileCallback(err, data){
+      };              
+  
+  
+      if((req.body.name === "") || (req.body.city === "") || (req.body.address === "") || ((/^[0-9.]+$/).test(req.body.price) === false)){
+        res.render("addapartmenterror");
+     } 
+  
+     else {
+        var json = JSON.stringify(apartments);
+        fs.readFile('./models/apartments.json', 'utf8', function readFileCallback(err, data){
             if(err){
               console.log("Error");
             }
             else {
-              apartments.push(apartment);  // push new info
-              json = JSON.stringify(apartments, null, 4);
-              fs.writeFile('./models/apartments.json', json, 'utf8');  // write new apartment into the file
+                apartments.push(apartment);  // push new info
+                json = JSON.stringify(apartments, null, 4);
+                fs.writeFile('./models/apartments.json', json, 'utf8');  // write new apartment into the file
             }
-      });
-	
-   	res.redirect('/');
+        });
+    
+   	    res.redirect('/');
+     }
+  
 });
 
-
-
+  
 // HTTP GET request for editapartment page
 
 
@@ -108,34 +114,37 @@ app.get('/editapartment/:name', function(req, res){
 // HTTP POST request for editapartment page
 
 app.post('/editapartment/:name', function(req, res){
-		var json = JSON.stringify(apartments);
-		fs.readFile('./models/apartments.json', 'utf8', function readFileCallback(err, data){
-				if(err){
-					console.log("Error");
-				}
-			else {
-				
-				var findName = req.params.name;
-				var data = apartments;
-				var index = data.map(function(apartment) {return apartment.name;}).indexOf(findName);
-				
-        // values from the edit form
-				apartments.splice(index, 1, {
-						name: req.body.newname,
-						city: req.body.newcity,
-						address: req.body.newaddress,
-						price: req.body.newprice,
-						description: req.body.newdescription,
-						image: req.body.newimage,
-						id: req.body.newid
-				});
-				
-				json = JSON.stringify(apartments, null, 4);
-				fs.writeFile('./models/apartments.json', json, 'utf8');  // writes new values into the file
-				
-			}
-			res.redirect('/');
-		});			
+  
+          var json = JSON.stringify(apartments);
+          fs.readFile('./models/apartments.json', 'utf8', function readFileCallback(err, data){
+              if(err){
+                console.log("Error");
+              }
+              else {
+
+                  var findName = req.params.name;
+                  var data = apartments;
+                  var index = data.map(function(apartment) {return apartment.name;}).indexOf(findName);
+
+                  // values from the edit form
+                  apartments.splice(index, 1, {
+                      name: req.body.newname,
+                      city: req.body.newcity,
+                      address: req.body.newaddress,
+                      price: req.body.newprice,
+                      description: req.body.newdescription,
+                      image: req.body.newimage,
+                      id: req.body.newid
+                  });
+
+              json = JSON.stringify(apartments, null, 4);
+              fs.writeFile('./models/apartments.json', json, 'utf8');  // writes new values into the file
+             }    
+            
+            res.redirect('/');
+                                          
+        });
+         
 });
 
 
@@ -185,10 +194,9 @@ app.get('/contact', function(req, res) {
 });
 
 
-
 // HTTP POST request for contact page
 app.post('/contact', function(req, res){
-    if((req.body.contname === "") || ((/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/).test(req.body.contemail) === false) || (req.body.contmessage === "") || (req.body.contcaptcha != 17)){
+    if((req.body.contname === "") || ((/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/).test(req.body.contemail) === false) || (req.body.contmessage === "") || (req.body.contcaptcha != 17)){
         res.render("error");
     }
     else {

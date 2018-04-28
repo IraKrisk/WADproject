@@ -198,7 +198,6 @@ a.button {
 a.button:hover {
 	font-weight: bold;
 }
-
 .newbutton {
 	display: inline-block;
 	box-sizing: border-box;
@@ -208,6 +207,16 @@ a.button:hover {
 .newbutton a {
 	text-align: center;
 }
+/* add - edit form */
+.req {
+  font-style: italic;
+  float: right;
+  margin-right: 30px;
+  margin-top: 25px;
+  z-index: 5;
+}
+
+
 .individualAp {
 	width: 33%;
 	float: left;
