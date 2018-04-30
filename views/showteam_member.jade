@@ -1,0 +1,14 @@
+extends layout
+block content
+	main
+		#Show
+				each team_member in indMem
+						h2 Full name: #{team_member.fname} #{team_member.lname}
+						h4 Office location: #{team_member.city} 
+						h4 Corporate email: #{team_member.email} 
+						h4 Bio: #{team_member.bio}
+						h4 Employee id: #{team_member.id}
+						h4 Security photo:
+						img(src='/#{team_member.photo}', alt='team_member') 
+						a.button(href='/editteam_member/#{team_member.fname}') Edit #{team_member.fname}
+						a.button(href='/deleteteam_member/#{team_member.fname}') Delete #{team_member.fname}

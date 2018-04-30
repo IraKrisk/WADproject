@@ -36,6 +36,17 @@ $(document).ready(function(){
     $(".dropdownNav").slideToggle();
   });
   
+  
+  // dropdown
+  $(".dropdow").hover(function(){
+    $(".dropdowNav").slideToggle();
+  });
+  
+// reveal category display
+  $("#revealCat").click(function(){
+    $("#menuCat").slideToggle(500);
+  });
+  
 }); 
 
 

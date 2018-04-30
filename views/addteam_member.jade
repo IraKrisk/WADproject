@@ -1,0 +1,20 @@
+extends layout
+block content
+  main
+     .form.addedit
+       h2 New Team Member
+       form(method="post")
+         fieldset 
+           label(for="fname") First name:
+           input(name="fname", type="text", placeholder="Enter the first name of the team member", required)
+           label(for="lname") Last name:
+           input(name="lname", type="text", placeholder="Enter the last name of the team member", required)
+           label(for="city") City:
+           input(name="city", type="text", placeholder="Enter the city where the member is based in", required)
+           label(for="email") Email:
+           input(name="email", type="text", placeholder="Enter the member’s corporate email", required, pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$')
+           label(for="bio") Bio:
+           input(name="bio", type="text", placeholder="Enter a short bio of the person", required)
+           label(for="photo") Photo:
+           input(name="photo", type="text", placeholder="Enter the photo of the team member", required, pattern='[a-z0-9]+\.(jpg)$', title='Only JPG files accepted')
+           button.button(type="submit") Add New Team Member

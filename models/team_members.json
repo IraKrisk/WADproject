@@ -1,0 +1,29 @@
+[
+    {
+        "fname": "Ira",
+        "lname": "Kriskovic",
+        "city": "Dublin",
+        "email": "ira@ime.ie",
+        "bio": "Ira has been in the team for over 2 years. She enjoys traveling and spending time with her family and friends.",
+        "photo": "ira.jpg",
+        "id": 1
+    },
+    {
+        "fname": "Matheus",
+        "lname": "Sturm",
+        "city": "Cork",
+        "email": "matheus@ime.ie",
+        "bio": "Matheus has recently joined the IME team. His hobbies include photography and taking long walks on the beach",
+        "photo": "matheus.jpg",
+        "id": "2"
+    },
+    {
+        "fname": "Eddy",
+        "lname": "Flynn",
+        "city": "Galway",
+        "email": "eddy@ime.ie",
+        "bio": "Eddy has been part of the IME Group since 2015. In his spare time, he enjoys the outdoors, especially sailing his boat.",
+        "photo": "eddy.jpg",
+        "id": 3
+    }
+]

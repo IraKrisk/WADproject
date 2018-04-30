@@ -1,0 +1,21 @@
+extends layout
+block content
+  main
+     .form.addedit
+       h2 Edit Partner
+       each partner in indPar
+         form(method="post")
+           fieldset 
+             label(for="newname") Partner Name:
+             input(name="newname", type="text", value="#{partner.name}")
+             label(for="newcategory") Category:
+             input(name="newcategory", type="text", value="#{partner.category}")
+             label(for="newwebsite") Website:
+             input(name="newwebsite", type="text", value="#{partner.website}")
+             label(for="newdiscount_rate") Discount rate:
+             input(name="newdiscount_rate", type="text", value="#{partner.discount_rate}")
+             label(for="newlogo") Partner Logo:
+             input(name="newlogo", type="text", value="#{partner.logo}")
+             label(for="newid")
+             input.hide(name="newid", type="text", value="#{partner.id}")
+             button.button(type="submit") Edit #{partner.name}

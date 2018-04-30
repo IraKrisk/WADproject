@@ -1,0 +1,19 @@
+extends layout
+block content
+     #Show
+        br
+        br
+        h1 Meet our team
+        br
+        a.button_add(href='/addteam_member') Add New Team Member
+        .grid-container       
+            each team_member in team_members 
+              .teamMem  
+                h1 #{team_member.fname}
+                br
+                img(src='#{team_member.photo}')
+                h2 Your point of contact in #{team_member.city}
+                a.buttonemail_grid(href='mailto:#{team_member.email}') Send an email to #{team_member.fname}
+                // pass the parameter to the function
+                a.button_grid(href='/showteam_member/#{team_member.fname}') Show details
+                br

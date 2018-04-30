@@ -1,0 +1,23 @@
+extends layout
+block content
+  main
+     .form.addedit
+       h2 Edit Team Member
+       each team_member in indMem
+         form(method="post")
+           fieldset 
+             label(for="newfname") First Name:
+             input(name="newfname", type="text", value="#{team_member.fname}", required)
+             label(for="newlname") Last Name:
+             input(name="newlname", type="text", value="#{team_member.lname}", required)
+             label(for="newcity") Office location:
+             input(name="newcity", type="text", value="#{team_member.city}", required)
+             label(for="newemail") Email:
+             input(name="newemail", type="text", value="#{team_member.email}", required, pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$')
+             label(for="newbio") Bio:
+             input(name="newbio", type="text", value="#{team_member.bio}", required)
+             label(for="newphoto") team_member photo:
+             input(name="newphoto", type="text", value="#{team_member.photo}", required, pattern='[a-z0-9]+\.(jpg)$', title='Only JPG files accepted')
+             label(for="newid")
+             input.hide(name="newid", type="text", value="#{team_member.id}")
+             button.button(type="submit") Edit #{team_member.fname}

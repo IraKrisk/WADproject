@@ -1,0 +1,20 @@
+extends layout
+block content
+  main
+     .form.addedit
+       h2 New Partner
+       form(method="post")
+         fieldset 
+           label(for="name") Partner Name:
+           input(name="name", type="text", placeholder="Enter a partner name", required) 
+           label(for="category") Category:
+           input(name="category", type="text", placeholder="Enter a category", required)
+           label(for="website") Website:
+           input(name="website", type="text", placeholder="Enter a website", required, pattern='https?://.+', title="http format")
+           label(for="discount_rate") Discount rate:
+           input(name="discount_rate", type="text", placeholder="Enter a discout rate", required, pattern='[1-9]?[0-9]', title="Numbers only")
+           label(for="logo") Partner Logo:
+           input(name="logo", type="text", placeholder="Enter the official logo of the parntner", required, pattern='[a-z0-9]+\.(png)$', title='Only PNG files accepted')
+           label(for="description") Partner Logo:
+           input(name="description", type="text", placeholder="Enter a description", required)
+           button.button(type="submit") Add New Partner

@@ -1,0 +1,20 @@
+extends layout
+block content
+     #Show
+        br
+        br
+        a.button_add(href='/addpartner') Add New Partner
+        br
+        h2 By booking your holiday apartment with IME, you can also enjoy great discounts during your stay at the partners below:
+        br
+        .grid-container       
+            each partner in partners 
+              .partner 
+                h2 #{partner.name}
+                a(href='#{partner.website}')
+                  img.parlogo(src='#{partner.logo}')
+                h2 #{partner.category}
+                p #{partner.discount_rate}%
+                // pass the parameter to the function
+                a.button_grid(href='/showpartner/#{partner.name}') More information
+  

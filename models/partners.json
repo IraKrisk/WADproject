@@ -1,0 +1,55 @@
+[
+    {
+        "name": "Costa Coffee",
+        "category": "food&drink",
+        "website": "https://www.costaireland.ie/",
+        "discount_rate": 15,
+        "logo": "/partners/costa.png",
+        "description": "Walk into a Costa and you'll notice it's a little different to other coffee shops. Firstly, there's the warm and welcoming atmosphere.",
+        "id": 1
+    },
+    {
+        "name": "Burger King",
+        "category": "Food&Drink",
+        "website": "https://www.whopper.ie/",
+        "discount_rate": "10",
+        "logo": "/partners/burgerking.png",
+        "description": "Burger King is known for serving high-quality, great-tasting, and affordable food. Founded in 1954, BK is the second largest fast food hamburger chain in the world.",
+        "id": "2"
+    },
+    {
+        "name": "AppleGreen",
+        "category": "Other",
+        "website": "http://applegreenstores.com/ie/",
+        "discount_rate": 5,
+        "logo": "/partners/applegreen.png",
+        "description": "Applegreen is a major petrol forecourt retailer in the Republic of Ireland with a significant and growing presence in the United Kingdom.",
+        "id": 3
+    },
+    {
+        "name": "Apache Pizza",
+        "category": "Food&Drink",
+        "website": "https://www.apache.ie/",
+        "discount_rate": 15,
+        "logo": "/partners/apachepizza.png",
+        "description": "Apache Pizza is an Irish pizza delivery brand, we have over 145 stores in the Republic of Ireland and 13 in Northern Ireland.",
+        "id": 4
+    },
+    {
+        "name": "M&S",
+        "category": "Clothing",
+        "website": "https://www.marksandspencer.ie",
+        "discount_rate": "20",
+        "logo": "/partners/m&s.png",
+        "description": "M&S is committed to making every moment special for our customers, through our high quality, own-brand Food, Clothing & Home product.",
+        "id": 5
+    },
+    {
+        "name": "Wild Rover Tours",
+        "category": "Activities",
+        "website": "https://wildrovertours.com/",
+        "discount_rate": "15",
+        "logo": "/partners/wildrovertours.png",
+        "id": "6"
+    }
+]

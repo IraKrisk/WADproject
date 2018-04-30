@@ -134,7 +134,7 @@ footer a {
   width: 50%;
   margin: 90px auto 0 auto;
 }
-ul.dropdownNav {
+ul.dropdownNav, ul.dropdowNav {
   display: none;
   position: absolute;
   box-sizing: border-box;
@@ -144,7 +144,7 @@ ul.dropdownNav {
   right: 0;
   margin: -28px auto 0 auto;
 }
-#citySearch li a {
+#citySearch li a, #revealCat li a {
   box-sizing: border-box;
   border: none;
 	display: block;
@@ -158,7 +158,7 @@ ul.dropdownNav {
 .dropdownNav a {
   margin: 0;
 }
-.dropdownNav li {
+.dropdownNav li, .dropdowNav li {
   padding: 0;
   text-align: center;
   font-size: 1em;
@@ -271,7 +271,6 @@ textarea {
   line-height: 0;
   color: #fff;
 }
-
 button#proceed {
   box-sizing: border-box;
   position: absolute;
@@ -360,8 +359,7 @@ p#mapText {
 
 /* thank you page */
 .button.IME {
-  width: 70%;
-  
+  width: 70%; 
   display: block;
   padding: 7px 50px;
 }
@@ -373,6 +371,167 @@ p#mapText {
 .hide img {
   width: 70%;
   margin: 15px auto 20px auto;
+}
+
+/* partners and team pages */
+.grid-container {
+ display: grid;
+ align-content: center;
+ grid-template-columns: auto auto auto;
+ grid-gap: 10px;
+ padding: 10px;
+}
+
+.parlogo {
+ width: 10%;
+ margin-left: auto;
+ margin-right: auto;
+ display: block;
+}
+.memphoto {
+ width: 40%;
+ margin-left: auto;
+ margin-right: auto;
+ display: block;
+}
+
+
+.hide img {
+  width: 70%;
+  margin: 15px auto 20px auto;
+}
+#Show {
+  width: 90%;
+  margin: 0 auto;
+}
+#Show h1, h2, h4 {
+ text-align: center;
+}
+#Show img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.grid-container {
+ display: grid;
+ grid-template-columns: auto auto auto;
+ grid-gap: auto;
+ column-gap: 60px;
+ padding: 50px 30px;
+  margin: 0 auto;
+}
+.teamMem img {
+	max-width: 80%;
+	outline: 1px solid #0b537c;
+	outline-offset: 3px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.teamMem img:hover {
+  margin: 0 auto;
+  opacity: 0.85;
+}
+.grid-container h2:hover {
+  color: #ff581a ;
+}
+.partner {
+ background-color: rgba(255, 255, 255, 0.8);
+ text-align: center;
+ padding: 5px 0;
+}
+.parlogo {
+ width: 50%;
+ margin-left: auto;
+ margin-right: auto;
+ display: block;
+ outline: none;
+}
+.parlogo:hover {
+  opacity: 0.85;
+}
+.grid-container h1 {
+    color: #ff581a;
+  	text-align: center;
+}
+.grid-container h2, h3, p {
+  	text-align: center;
+}
+.button_add {
+  width: 25%;
+  box-sizing: border-box;
+  border: none;
+	display: block;
+	color: #fff;
+  background-color: #0b537c;
+  border-radius: 3px;
+  padding: 10px 20px;
+  margin: 20px auto;
+  font-size: .9em;
+}
+a.button_add {
+	text-align: center;
+}
+a.button_add:hover {
+	font-weight: bold;
+}
+.button_grid {
+  width: 50%;
+  position: center;
+  box-sizing: border-box;
+  border: none;
+	display: block;
+	color: #fff;
+  background-color: #0b537c;
+  border-radius: 3px;
+  padding: 10px 20px;
+  margin: 20px auto;
+  font-size: .9em;
+}
+a.button_grid {
+	text-align: center;
+}
+a.button_gridr:hover {
+	font-weight: bold;
+}
+.buttonemail_grid
+ {
+  width: 50%;
+  position: center;
+  box-sizing: border-box;
+  border: none;
+	display: block;
+	color: #fff;
+  background-color: #ff581a;
+  border-radius: 3px;
+  padding: 10px 20px;
+  margin: 20px auto;
+  font-size: .9em;
+}
+a.buttonemail_grid {
+	text-align: center;
+}
+a.buttonemail_grid:hover {
+	font-weight: bold;
+}
+#menuCat {
+	display: none;
+  position: center;
+}
+.button_cat {
+  width: 10%;
+  position: center;
+  display: inline-block;
+  overflow:hidden;
+  box-sizing: border-box;
+  border: none;
+	color: #fff;
+  background-color: #ff581a;
+  border-radius: 3px;
+  padding: 10px 20px;
+  margin: 20px 20px;
+  font-size: .9em;
+  text-align: center;
 }
 
 

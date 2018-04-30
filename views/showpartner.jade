@@ -1,0 +1,16 @@
+extends layout
+block content
+	main
+		#Show
+				each partner in indPar
+						h2 #{partner.name}
+						img(src='#{partner.logo}', alt='partner')
+						h2 Category: #{partner.category}
+						h2 Discount rate: #{partner.discount_rate}%
+						h4 Partner Id: #{partner.id}
+						h4 #{partner.description}
+						br            
+						a.button(href='#{partner.website}') Visit official website
+						a.button(href='/editpartner/#{partner.name}')  Edit #{partner.name}
+						a.button(href='/deletepartner/#{partner.name}') Delete #{partner.name}
+						a.button(href='/partners') Return to partners
