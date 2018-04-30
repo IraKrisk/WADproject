@@ -15,7 +15,7 @@
         "discount_rate": "10",
         "logo": "/partners/burgerking.png",
         "description": "Burger King is known for serving high-quality, great-tasting, and affordable food. Founded in 1954, BK is the second largest fast food hamburger chain in the world.",
-        "id": "2"
+        "id": 2
     },
     {
         "name": "AppleGreen",
@@ -50,6 +50,7 @@
         "website": "https://wildrovertours.com/",
         "discount_rate": "15",
         "logo": "/partners/wildrovertours.png",
-        "id": "6"
+        "description": "Experience Ireland's wild side in a fun and unforgettable way. Enjoy a nice blend of history, folklore, storytelling and music",
+        "id": 6
     }
 ]
