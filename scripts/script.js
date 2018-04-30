@@ -35,21 +35,8 @@ $(document).ready(function(){
   $(".dropdown").hover(function(){
     $(".dropdownNav").slideToggle();
   });
-  
-  
-  // dropdown
-  $(".dropdow").hover(function(){
-    $(".dropdowNav").slideToggle();
-  });
-  
-// reveal category display
-  $("#revealCat").click(function(){
-    $("#menuCat").slideToggle(500);
-  });
-  
+   
 }); 
-
-
 
 
 

@@ -2,21 +2,22 @@ extends layout
 block content
   main
      .form.addedit
-       h2 Edit Partner
-       each partner in indPar
+       h2 Edit Apartment
+       each apartment in indivAp
          form(method="post")
            fieldset 
-             label(for="newname") Partner Name:
-             input(name="newname", type="text", value="#{partner.name}", required)
-             label(for="newcategory") Category:
-             input(name="newcategory", type="text", value="#{partner.category}", required)
-             label(for="newwebsite") Website:
-             input(name="newwebsite", type="text", value="#{partner.website}", required, pattern='https?://.+', title="http format")
-             label(for="newdiscount_rate") Discount rate:
-             input(name="newdiscount_rate", type="text", value="#{partner.discount_rate}", required, pattern='[1-9]?[0-9]', title="Numbers only")
-             label(for="newlogo") Partner Logo:
-             input(name="newlogo", type="text", value="#{partner.logo}", required)
+             label(for="newname") Apartment Name:
+             input(name="newname", type="text", value="#{apartment.name}")
+             label(for="newcity") City:
+             input(name="newcity", type="text", value="#{apartment.city}")
+             label(for="newaddress") Address:
+             input(name="newaddress", type="text", value="#{apartment.address}")
+             label(for="newprice") Monthly Price:
+             input(name="newprice", type="text", value="#{apartment.price}")
+             label(for="newdescription") Description:
+             input(name='newdescription', value="#{apartment.description}")
+             label(for="newimage") Apartment Image:
+             input(name="newimage", type="text", value="#{apartment.image}")
              label(for="newid")
-             input.hide(name="newid", type="text", value="#{partner.id}")
-             button.button(type="submit") Edit #{partner.name}
-             a.button(href='/partners') Return to partners
+             input.hide(name="newid", type="text", value="#{apartment.id}")
+             button.button(type="submit") Edit #{apartment.name}

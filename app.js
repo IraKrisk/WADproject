@@ -188,14 +188,6 @@ app.get('/category/:city', function(req, res){
 });
 
 
-
-
-
-
-
-
-
-
 // ** START PARTNERS CODE ** //
 
 
@@ -205,7 +197,7 @@ app.get('/partners', function(req, res){
              {partners:partners} // call the partners variable
             ); 
   console.log("Partners page is loaded");
-})
+});
 
 // HTTP GET request for individual partner info
 app.get('/showpartner/:name', function(req, res){
@@ -238,7 +230,7 @@ app.get('/partnercat/:category', function(req, res){
 app.get('/addpartner', function(req, res){
   res.render("addpartner"); 
   console.log("Add partner page is loaded"); 
-})
+});
 
 // HTTP POST request for addpartner page
 app.post('/addpartner', function(req, res){
@@ -361,7 +353,7 @@ app.get('/team_members', function(req, res){
              {team_members:team_members} // call the team_members variable
             ); 
   console.log("team_members page is loaded");
-})
+});
 // HTTP GET request for individual team_member info
 app.get('/showteam_member/:fname', function(req, res){
 	  console.log("Show team_member details loaded");
@@ -381,7 +373,7 @@ app.get('/showteam_member/:fname', function(req, res){
 app.get('/addteam_member', function(req, res){
   res.render("addteam_member"); 
   console.log("Add team_member page is loaded"); 
-})
+});
 
 // HTTP POST request for addteam_member page
 app.post('/addteam_member', function(req, res){

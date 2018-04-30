@@ -16,6 +16,8 @@ block content
              input(name="newdiscount_rate", type="text", value="#{partner.discount_rate}")
              label(for="newlogo") Partner Logo:
              input(name="newlogo", type="text", value="#{partner.logo}")
+             label(for="newdescription") Description:
+             input(name="newdescription", type="text", value="#{partner.description}", required)
              label(for="newid")
              input.hide(name="newid", type="text", value="#{partner.id}")
              button.button(type="submit") Edit #{partner.name}

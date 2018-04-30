@@ -417,8 +417,10 @@ p#mapText {
  grid-template-columns: auto auto auto;
  grid-gap: auto;
  column-gap: 60px;
- padding: 50px 30px;
-  margin: 0 auto;
+ padding-top: 50px;
+ padding-right: 30px;
+ padding-bottom: 50px;
+ padding-left: 80px;
 }
 .teamMem img {
 	max-width: 80%;
@@ -429,7 +431,6 @@ p#mapText {
   margin-right: auto;
 }
 .teamMem img:hover {
-  margin: 0 auto;
   opacity: 0.85;
 }
 .grid-container h2:hover {
@@ -515,11 +516,12 @@ a.buttonemail_grid:hover {
 	font-weight: bold;
 }
 #menuCat {
-	display: none;
-  position: center;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
 }
 .button_cat {
-  width: 10%;
+  width: 21%;
   position: center;
   display: inline-block;
   overflow:hidden;
@@ -529,12 +531,10 @@ a.buttonemail_grid:hover {
   background-color: #ff581a;
   border-radius: 3px;
   padding: 10px 20px;
-  margin: 20px 20px;
+  margin: 20px 2%;
   font-size: .9em;
   text-align: center;
 }
-
-
 
 
 

@@ -13,7 +13,7 @@ block content
                 br
                 img(src='#{team_member.photo}')
                 h2 Your point of contact in #{team_member.city}
-                a.buttonemail_grid(href='mailto:#{team_member.email}') Send an email to #{team_member.fname}
+                a.buttonemail_grid(href='mailto:#{team_member.email}') Email #{team_member.fname}
                 // pass the parameter to the function
                 a.button_grid(href='/showteam_member/#{team_member.fname}') Show details
                 br

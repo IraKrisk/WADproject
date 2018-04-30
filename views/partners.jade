@@ -7,6 +7,12 @@ block content
         br
         h2 By booking your holiday apartment with IME, you can also enjoy great discounts during your stay at the partners below:
         br
+        a#revealCat.button_add Show by category
+        #menuCat
+         a.button_cat(href='/partnercat/Food&Drink') Food & Drink
+         a.button_cat(href='/partnercat/Activities') Activities
+         a.button_cat(href='/partnercat/Clothing') Clothing
+         a.button_cat(href='/partnercat/Other') Other
         .grid-container       
             each partner in partners 
               .partner 
@@ -17,4 +23,3 @@ block content
                 p #{partner.discount_rate}%
                 // pass the parameter to the function
                 a.button_grid(href='/showpartner/#{partner.name}') More information
-  
