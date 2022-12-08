@@ -9,7 +9,7 @@
   "author": "Matheus Sturm, Eddy Flynn, Ira Kriskovic",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "jade": "^1.11.0"
   }
 }
